@@ -344,3 +344,60 @@ footer {
     text-align: center;
     padding: 30px;
 }
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        padding: 0 25px;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .featured-projects,
+    .services,
+    .about,
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
+
+}
