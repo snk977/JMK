@@ -20,6 +20,7 @@ body {
     font-family: Arial, sans-serif;
     color: var(--text);
     background: white;
+    overflow-x: hidden;
 }
 
 /* =========================
@@ -96,7 +97,6 @@ body {
     justify-content: center;
 
     max-width: 700px;
-
     margin-left: 120px;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 /* =========================
-   GLOBAL SECTIONS
+   GLOBAL
 ========================= */
 
 .container {
@@ -344,41 +344,70 @@ footer {
     text-align: center;
     padding: 30px;
 }
-/* MOBILE RESPONSIVE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
     .navbar {
-        padding: 15px 20px;
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .logo {
-        font-size: 14px;
+        font-size: 16px;
+        text-align: center;
     }
 
     .nav-links {
-        gap: 15px;
-        font-size: 12px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 100vh;
     }
 
     .hero-content {
         margin-left: 0;
-        padding: 0 25px;
+        padding: 0 20px;
         max-width: 100%;
+        height: 100vh;
     }
 
     .hero-content h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .hero-content p {
         font-size: 18px;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 220px;
+        text-align: center;
+    }
+
     .stats {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
         padding: 50px 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 42px;
     }
 
     .featured-projects,
@@ -386,6 +415,13 @@ footer {
     .about,
     .contact {
         padding: 70px 20px;
+    }
+
+    .featured-projects h2,
+    .services h2,
+    .about h2,
+    .contact h2 {
+        font-size: 34px;
     }
 
     .projects-grid {
@@ -399,5 +435,4 @@ footer {
     .project-card img {
         height: 220px;
     }
-
 }
