@@ -26,7 +26,12 @@ body {
 /* =========================
    NAVIGATION
 ========================= */
-
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -449,5 +454,38 @@ footer {
 
     .project-card img {
         height: 220px;
+    }
+}
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(0,0,0,0.95);
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 14px;
     }
 }
