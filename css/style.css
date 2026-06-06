@@ -352,15 +352,16 @@ footer {
 @media (max-width: 768px) {
 
     .navbar {
-        padding: 15px;
-        flex-direction: column;
-        gap: 10px;
-    }
+    padding: 15px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .logo {
-        font-size: 16px;
-        text-align: center;
-    }
+.logo {
+    font-size: 14px;
+    text-align: left;
+}
 
     .nav-links {
         width: 100%;
