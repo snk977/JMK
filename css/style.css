@@ -462,8 +462,21 @@ footer {
     }
 
     .hero {
-        background-position: 70% center;
-    }
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.75) 0%,
+            rgba(0,0,0,0.50) 45%,
+            rgba(0,0,0,0.20) 100%
+        ),
+        url("../images/heromobile.jpg");
+
+    background-size: cover;
+    background-position: center center;
+
+    min-height: 100vh;
+}
 
     .hero-content {
         margin-left: 0;
