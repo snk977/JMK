@@ -472,3 +472,66 @@ footer {
         height: 220px;
     }
 }
+/* ==========================
+   WHATSAPP FLOAT BUTTON
+========================== */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    z-index: 9999;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.whatsapp-icon {
+    font-size: 20px;
+}
+
+.whatsapp-text {
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+
+    .whatsapp-text {
+        display: none;
+    }
+
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+
+        padding: 0;
+
+        justify-content: center;
+
+        border-radius: 50%;
+    }
+
+    .whatsapp-icon {
+        font-size: 26px;
+    }
+}
