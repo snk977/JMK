@@ -6,6 +6,10 @@
     --white: #ffffff;
 }
 
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -110,7 +114,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    max-width: 850px;
+    max-width: 750px;
 
     margin-left: 120px;
 }
@@ -137,7 +141,6 @@ body {
 
 .btn-primary,
 .btn-secondary {
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -175,85 +178,11 @@ body {
 }
 
 /* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        padding: 15px 20px;
-    }
-
-    .logo img {
-        height: 45px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-
-        position: absolute;
-
-        top: 75px;
-        left: 0;
-
-        width: 100%;
-
-        background: rgba(0,0,0,0.95);
-
-        flex-direction: column;
-
-        text-align: center;
-
-        display: none;
-
-        padding: 20px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        padding: 12px 0;
-    }
-
-    .hero-content {
-
-        margin-left: 0;
-
-        padding: 0 20px;
-
-        max-width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: 42px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        width: 220px;
-    }
-}
-/* =========================
    GLOBAL
 ========================= */
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -376,7 +305,6 @@ section {
     padding: 40px 30px;
 
     border-radius: 12px;
-
     text-align: center;
 
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
@@ -448,128 +376,8 @@ footer {
 }
 
 /* =========================
-   MOBILE
+   WHATSAPP BUTTON
 ========================= */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        padding: 15px 20px;
-    }
-
-    
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-}
-    .hamburger {
-        display: block;
-        font-size: 32px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        left: 0;
-
-        width: 100%;
-
-        background: rgba(0,0,0,0.95);
-
-        flex-direction: column;
-        text-align: center;
-
-        display: none;
-
-        padding: 20px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        padding: 12px 0;
-    }
-
-    .hero {
-        min-height: 100vh;
-    }
-
-    .hero-content {
-        margin-left: 0;
-        padding: 0 20px;
-        max-width: 100%;
-        height: 100vh;
-    }
-
-    .hero-content h1 {
-        font-size: 38px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        width: 220px;
-        text-align: center;
-    }
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 50px 20px;
-    }
-
-    .stat-card h2 {
-        font-size: 42px;
-    }
-
-    .featured-projects,
-    .services,
-    .about,
-    .contact {
-        padding: 70px 20px;
-    }
-
-    .featured-projects h2,
-    .services h2,
-    .about h2,
-    .contact h2 {
-        font-size: 34px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card img {
-        height: 220px;
-    }
-}
-/* ==========================
-   WHATSAPP FLOAT BUTTON
-========================== */
 
 .whatsapp-float {
     position: fixed;
@@ -609,8 +417,113 @@ footer {
 .whatsapp-text {
     white-space: nowrap;
 }
-@media (max-width: 768px) 
-{
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(0,0,0,0.95);
+
+        flex-direction: column;
+        text-align: center;
+
+        display: none;
+
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 12px 0;
+    }
+
+    .hero {
+        background-position: 70% center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        padding: 0 20px;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 220px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 50px 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 42px;
+    }
+
+    .featured-projects,
+    .services,
+    .about,
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .featured-projects h2,
+    .services h2,
+    .about h2,
+    .contact h2 {
+        font-size: 34px;
+    }
+
+    .projects-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
 
     .whatsapp-text {
         display: none;
@@ -619,11 +532,8 @@ footer {
     .whatsapp-float {
         width: 60px;
         height: 60px;
-
         padding: 0;
-
         justify-content: center;
-
         border-radius: 50%;
     }
 
