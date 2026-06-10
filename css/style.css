@@ -242,8 +242,10 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -263,8 +265,12 @@ section {
 
 .project-card img {
     width: 100%;
-    height: 280px;
+    height: 500px;
     object-fit: cover;
+}
+.project-card {
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-info {
