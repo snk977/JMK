@@ -239,7 +239,9 @@ section {
     font-size: 18px;
     margin-bottom: 60px;
 }
-
+.section-subtitle {
+    margin-bottom: 30px;
+}
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -532,7 +534,7 @@ footer {
     .services h2,
     .about h2,
     .contact h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .projects-grid,
